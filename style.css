@@ -1,0 +1,236 @@
+/* Light Mode: 
+Main: #E4D4ED 
+Secondary: #DEC1EE
+Accent: #8D00CE 
+-------------------- Made and Personalized by Kris Ezekiel a.k.a ekso.
+Dark mode:
+Main: #151116 
+Secondary: #1C181E
+Accent: #8D00CE 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+* {
+    padding:0;
+    margin: 0;
+    font-family: Alkatra;
+    scroll-behavior: smooth;
+    user-select: none;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 2px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #8D00CE;
+    border-radius: 100px;
+}
+body {
+    background-color: #151116 ;
+}
+aside {
+    position: fixed;
+    width: 50px;
+    min-height: 100vh;
+    background-color: #8D00CE;
+}
+aside hr {
+    border: 0;
+}
+aside img {
+    width: 40px;
+    border-radius: 100px;
+    padding: 5px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+nav a {
+    transition: 0.4s;
+}
+nav a:hover, nav a:active {
+    fill: white;
+    font-size: 35px;
+}
+section {
+    min-height: 100vh;
+    margin-left: 30px;
+}
+.purple-background {
+    width: 520px;
+    height: 400vh;
+    background-color: #8D00CE;
+    position: absolute;
+    top: -70px;
+    left: -250px;
+    z-index: -999;
+    transform: rotateZ(10deg);
+    box-shadow: 0 0 20px;
+}
+/* Home Start */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home img {
+    padding: 5px;
+    width: 200px;
+    margin: 2rem;
+    border-radius: 100px;
+    box-shadow: 20px 20px rgba(222, 193, 238,0.2),-20px -20px rgba(85, 0, 124, 0.2);
+}
+.home h1 {
+    font-size: 50px;
+    color: rgb(141, 0, 206);
+}
+.home h1::after {
+    color: #DEC1EE;
+    font-size: 30px;
+    display: block;
+    content: 'Programming Student';
+}
+/* Home End */
+/* About Start */
+.about main {
+    display: flex;
+    justify-content: space-around;
+    color: #DEC1EE;
+    overflow-y: hidden;
+}
+.about article {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    height: 50px;
+    width: 150px;
+    padding: 1rem;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 10px;
+    overflow-y: hidden;
+    margin-top: 5px;
+}
+.about article:hover {
+    height: 60px;
+    width: 160px;
+}
+.about img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+/* About End */
+/* Portfolio Start */
+.port div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.port img {
+    width: 120px;
+    height: 100px;
+    margin-top: 100px;
+    opacity: 0.2;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+.port img:active, .port img:hover {
+    width: 140px;
+    height: 120px;
+    opacity: 1;
+    filter: grayscale(0);
+}
+.port .txt-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 30px;
+}
+.port .txt-wrapper a {
+    text-decoration: none;
+    color: #8D00CE;
+    fill: #8D00CE;
+    transition: 0.4s;
+}
+.port .txt-wrapper:hover, .port .txt-wrapper:active{
+    box-shadow: 0 0 5px;
+    font-size: 40px;
+}
+/* Portfolio End */
+/* Message Start */
+.message {
+    display: grid;
+    place-items: center;
+    overflow-y: hidden;
+}
+.message main {
+    background-color: white;
+    border: 5px solid #8D00CE;
+    width: 340px;
+    overflow-y: hidden;
+    border-radius: 20px;
+}
+.message .input-wrap {
+    display: block;
+    padding: 1rem;
+    overflow-y: hidden;
+}
+.input {
+    width: 295px;
+    border-radius: 10px;
+    border: 2px solid #8D00CE;
+    outline: #8D00CE;
+    font-size: 7px;
+    padding: 5px;
+}
+button {
+    cursor:pointer;
+    margin-left: 7px;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #8D00CE;
+    color: white;
+}
+button:active {
+    background-color: #8D00CE;
+    color: white;
+    box-shadow: 0 0 10px #8D00CE;
+}
+textarea {
+    resize: none;
+    height: 100px;
+    overflow: scroll;
+}
+.input-wrap label{
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transition: 0.5s;
+    padding: 1.2rem;
+    color: rgb(230, 230, 230);
+    pointer-events: none;
+}
+.input-wrap {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+.input:focus+label,
+.input:valid+label {
+    top: 0px;
+    left: 20px;
+    padding: 1px;
+    font-size: 10px;
+    color: #8D00CE;
+}
+/* Message End */

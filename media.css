@@ -1,0 +1,110 @@
+@media (max-width:480px) {
+    .home {
+        display: block;
+    }
+    .home img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        border-radius: 1000px;
+    }
+    .home h1 {
+        text-align: center;
+    }
+    .about main {
+        display: grid;
+    }
+    .about article {
+        border-radius: 30px;
+        height: 30px;
+    }
+    .about img {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+    .message main {
+        width: 240px;
+        border-radius: 20px;
+    }
+    .input {
+        width: 195px;
+    }
+    .message button {
+        font-size: 12px;
+    }
+    .purple-background {
+        position: absolute;
+        top: -70px;
+        left: -450px;
+        transform: rotateZ(3deg);
+    }
+}
+@media (min-width:1000px) {
+    .home img {
+        width: 400px;
+        border-radius: 500px;
+    }
+    .home h1 {
+        font-size: 80px;
+    }
+    .home h1:after {
+        font-size: 50px;
+    }
+    .about article {
+        border-radius: 30px;
+        height: 50px;
+        width: 300px;
+        font-size: 20px;
+    }
+    .about article:hover {
+        height: 70px;
+        width: 360px;
+    }
+    .about img {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+    .about-header {
+        font-size: 40px;
+    }
+    .port img {
+        width: 170px;
+        height: 150px;
+    }
+    .port img:active, .port img:hover {
+        width: 240px;
+        height: 220px;
+    }
+    .message main {
+        width: 640px;
+        border-radius: 20px;
+    }
+    .input {
+        width: 595px;
+        font-size: 15px;
+    }
+    .message button {
+        font-size: 22px;
+    }
+    .input-wrap label{
+        font-size: 22px;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        transition: 0.5s;
+        padding: 1.2rem;
+        color: rgb(230, 230, 230);
+        pointer-events: none;
+    }
+    .input:focus+label,
+    .input:valid+label {
+        top:-5px;
+        left: 20px;
+        padding: 1px;
+        font-size: 16px;
+        color: #8D00CE;
+    }
+}
