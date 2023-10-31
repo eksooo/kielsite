@@ -1,4 +1,21 @@
 @media (max-width:480px) {
+    aside {
+        width: 30px;
+    }
+    aside img {
+        width: 25px;
+        border-radius: 100px;
+        padding: 5px;
+    }
+    nav ul {
+        font-size: 20px;
+    }
+    nav a {
+        transition: 0.4s;
+    }
+    nav a:hover, nav a:active {
+        font-size: 25px;
+    }
     .home {
         display: block;
     }
@@ -35,10 +52,11 @@
         font-size: 12px;
     }
     .purple-background {
+        background-color: #1C181E;
         position: absolute;
-        top: -70px;
+        top: -100px;
         left: -450px;
-        transform: rotateZ(3deg);
+        transform: rotateZ(5deg);
     }
 }
 @media (min-width:1000px) {
